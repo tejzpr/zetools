@@ -17,7 +17,7 @@ zetools -h
 ```
 
 # Available Commands
-## base64
+## **base64**
 ### Usage 
 ```sh
 zetools base64 <encode|decode> string
@@ -27,3 +27,20 @@ zetools base64 <encode|decode> string
         
   encode [string]
   * Base64 Encode a string.
+---
+## **hmac**
+### Usage 
+#### Hash a string
+```sh
+zetools hmac <sha256|sha512> -text <string> -key <your-key>
+```
+#### Hash a file
+```sh
+zetools hmac <sha256|sha512> -filename <string> -key <your-key>
+```
+  sha256 
+  * Generate a SHA256 hash.
+        
+  sha512 
+  * Generate a SHA512 hash.
+
