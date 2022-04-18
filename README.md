@@ -4,7 +4,7 @@
 [![CodeQL](https://github.com/tejzpr/zetools/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/tejzpr/zetools/actions/workflows/codeql-analysis.yml)
 
 # ZETools
-Command line tools for common tasks
+Unified Command line tools for common tasks
 
 # Using Docker
 ```docker
