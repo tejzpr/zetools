@@ -43,4 +43,24 @@ zetools hmac <sha256|sha512> -filename <string> -key <your-key>
         
   sha512 
   * Generate a SHA512 hash.
-
+---
+## **checkPort**
+### Usage
+#### Check if a port is in use
+```sh
+zetools checkPort --port 8080 --host localhost
+```
+---
+## **ping**
+### Usage
+#### Ping a remote server
+```sh
+zetools ping --host www.google.com
+```
+---
+## **ls**
+### Usage
+#### Lists the contents of a directory
+```sh
+zetools ls -bs M -p ../
+```
