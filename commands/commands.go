@@ -34,6 +34,8 @@ func GetCommand(name CommandName, opts *CommandOpts) *cli.Command {
 		return getCommandInstance(&pingCommand{}, opts)
 	case LSCommandName:
 		return getCommandInstance(&lsCommand{}, opts)
+	case TailCommandName:
+		return getCommandInstance(&tailCommand{}, opts)
 	}
 	return nil
 }

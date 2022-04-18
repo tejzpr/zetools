@@ -28,6 +28,7 @@ func main() {
 			commands.GetCommand(commands.CheckPortCommandName, nil),
 			commands.GetCommand(commands.PingCommandName, nil),
 			commands.GetCommand(commands.LSCommandName, nil),
+			commands.GetCommand(commands.TailCommandName, nil),
 		},
 	}
 
