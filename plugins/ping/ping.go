@@ -8,7 +8,7 @@ import (
 	"zetools/commands"
 
 	"github.com/go-ping/ping"
-	"github.com/urfave/cli/v2"
+	cli "github.com/tejzpr/zcli/v2"
 )
 
 func init() {

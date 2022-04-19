@@ -15,6 +15,8 @@ github.com/olekukonko/tablewriter v0.0.5 h1:P2Ga83D34wi1o9J6Wh1mRuqd4mF/x/lgBS7N
 github.com/olekukonko/tablewriter v0.0.5/go.mod h1:hPp6KlRPjbx+hW8ykQs1w3UBbZlj6HuIJcUGPhkA7kY=
 github.com/russross/blackfriday/v2 v2.1.0 h1:JIOH55/0cWyOuilr9/qlrm0BSXldqnqwMsf35Ld67mk=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
+github.com/tejzpr/zcli/v2 v2.4.1-0.20220419172759-49b528836b11 h1:rQ2Aafk83vHqVSKaN/tRk+5NHmPusD4MGHn/Z6Wrma4=
+github.com/tejzpr/zcli/v2 v2.4.1-0.20220419172759-49b528836b11/go.mod h1:mR3etU9pSGV6snz1SFbZEnkp/QkrSOhA61rE8i7AZJA=
 github.com/tejzpr/zetools-base64 v0.0.0-20220419153815-040e4a0439a8 h1:mNTKbXRvlFGCFN8FysaKS6muyXcuf+MfLVe14i2PD1g=
 github.com/tejzpr/zetools-base64 v0.0.0-20220419153815-040e4a0439a8/go.mod h1:JCBOfUBhpZjyt8i7dHv2Blm689rFhoLdobsAFUJnoZE=
 github.com/urfave/cli/v2 v2.4.0 h1:m2pxjjDFgDxSPtO8WSdbndj17Wu2y8vOT86wE/tjr+I=

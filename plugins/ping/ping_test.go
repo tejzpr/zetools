@@ -5,7 +5,7 @@ import (
 	"testing"
 	"zetools/commands"
 
-	"github.com/urfave/cli/v2"
+	cli "github.com/tejzpr/zcli/v2"
 )
 
 func Test_pingCommand_Name(t *testing.T) {

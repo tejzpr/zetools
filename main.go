@@ -13,7 +13,7 @@ import (
 
 	_ "github.com/tejzpr/zetools-base64"
 
-	"github.com/urfave/cli/v2"
+	cli "github.com/tejzpr/zcli/v2"
 )
 
 func main() {

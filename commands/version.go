@@ -3,10 +3,10 @@ package commands
 import (
 	"fmt"
 
-	"github.com/urfave/cli/v2"
+	cli "github.com/tejzpr/zcli/v2"
 )
 
-const appVersion = "v0.0.3"
+const appVersion = "v1.0.0"
 
 func getVersion() *cli.Command {
 	return &cli.Command{

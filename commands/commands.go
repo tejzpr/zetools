@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/urfave/cli/v2"
+	cli "github.com/tejzpr/zcli/v2"
 )
 
 // CommandName is the name of the command
