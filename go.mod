@@ -1,4 +1,4 @@
-module zetools
+module github.com/tejzpr/zetools
 
 go 1.18
 
