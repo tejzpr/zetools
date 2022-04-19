@@ -28,7 +28,7 @@ function in init() function
 Example:
 ```go
 func init() {
-	commands.RegisterCommand(TailCommandName, &tailCommand{}, nil)
+	commands.RegisterCommand(HelloCommandName, &helloCommand{}, nil)
 }
 ```
 Checkout the [Hello](https://github.com/tejzpr/zetools-hello) plugin for reference.
