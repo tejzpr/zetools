@@ -19,6 +19,16 @@ github.com/tejzpr/zcli/v2 v2.4.1-0.20220419172759-49b528836b11 h1:rQ2Aafk83vHqVS
 github.com/tejzpr/zcli/v2 v2.4.1-0.20220419172759-49b528836b11/go.mod h1:mR3etU9pSGV6snz1SFbZEnkp/QkrSOhA61rE8i7AZJA=
 github.com/tejzpr/zetools-base64 v1.0.0 h1:TH/AiKBcWz2xHPY2YWU2Zqa4opgnJ/hZMRpVK7J0Y8U=
 github.com/tejzpr/zetools-base64 v1.0.0/go.mod h1:XcGQDwBM5wUNMd5R5IzpVSUH3cgbY4y76tmI6ynb3m8=
+github.com/tejzpr/zetools-checkport v1.0.0 h1:1oSjgRApEtVCdqx7gGgwn/gVt+uznbRe6s+PEKC7LqA=
+github.com/tejzpr/zetools-checkport v1.0.0/go.mod h1:nPqxbZvDjdiYWozStEtBEO9+JjuKynWTdE+QlH1OPEU=
+github.com/tejzpr/zetools-hmac v1.0.0 h1:Tb2mdn9xg+mh70PgZbZQwa2kfOoglCxV6PLQrewEYCc=
+github.com/tejzpr/zetools-hmac v1.0.0/go.mod h1:Ew53/eQ6GOBIEni6nWNSv9O2GxcN4iDLm7oa2zBlmfI=
+github.com/tejzpr/zetools-ls v1.0.0 h1:E6mTf3X+m3rq/NK+1QAHaOcpeTLgzPp84Z0ldMeXVtk=
+github.com/tejzpr/zetools-ls v1.0.0/go.mod h1:pBjCcSDLQJlF+r6sZ/8ltIBcYVQOLR+YX990zamX/ss=
+github.com/tejzpr/zetools-ping v1.0.0 h1:J1nM1KAT1wuAVcdfOb/cLN5vy6/NYVFSwHB60zcynvY=
+github.com/tejzpr/zetools-ping v1.0.0/go.mod h1:0dDp1RCPqQ8V8IEKsA+wcP7ShCWNQdIOwQ/OGtNfaUk=
+github.com/tejzpr/zetools-tail v1.0.0 h1:JHEjIP8LtaO8v05SBK1GpVpe1+Toc7mG3F6LQJr6Buw=
+github.com/tejzpr/zetools-tail v1.0.0/go.mod h1:/PauT5Ryyr1bMx5VUgJXOLfcihaigLjLQtj0DdKbp7w=
 golang.org/x/net v0.0.0-20210316092652-d523dce5a7f4 h1:b0LrWgu8+q7z4J+0Y3Umo5q1dL7NXBkKBWkaVkAq17E=
 golang.org/x/net v0.0.0-20210316092652-d523dce5a7f4/go.mod h1:RBQZq4jEuRlivfhVLdyRGr576XBO4/greRjx4P4O3yc=
 golang.org/x/sync v0.0.0-20210220032951-036812b2e83c h1:5KslGYwFpkhGh+Q16bwMP3cOontH8FOep7tGV86Y7SQ=

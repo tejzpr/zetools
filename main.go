@@ -7,11 +7,11 @@ import (
 	"github.com/tejzpr/zetools/commands"
 
 	_ "github.com/tejzpr/zetools-base64"
-	_ "github.com/tejzpr/zetools/plugins/checkport"
-	_ "github.com/tejzpr/zetools/plugins/hmac"
-	_ "github.com/tejzpr/zetools/plugins/ls"
-	_ "github.com/tejzpr/zetools/plugins/ping"
-	_ "github.com/tejzpr/zetools/plugins/tail"
+	_ "github.com/tejzpr/zetools-checkport"
+	_ "github.com/tejzpr/zetools-hmac"
+	_ "github.com/tejzpr/zetools-ls"
+	_ "github.com/tejzpr/zetools-ping"
+	_ "github.com/tejzpr/zetools-tail"
 
 	cli "github.com/tejzpr/zcli/v2"
 )
