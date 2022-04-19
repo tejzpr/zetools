@@ -3,15 +3,15 @@ package main
 import (
 	"fmt"
 	"os"
-	"zetools/commands"
 
-	_ "zetools/plugins/checkport"
-	_ "zetools/plugins/hmac"
-	_ "zetools/plugins/ls"
-	_ "zetools/plugins/ping"
-	_ "zetools/plugins/tail"
+	"github.com/tejzpr/zetools/commands"
 
 	_ "github.com/tejzpr/zetools-base64"
+	_ "github.com/tejzpr/zetools/plugins/checkport"
+	_ "github.com/tejzpr/zetools/plugins/hmac"
+	_ "github.com/tejzpr/zetools/plugins/ls"
+	_ "github.com/tejzpr/zetools/plugins/ping"
+	_ "github.com/tejzpr/zetools/plugins/tail"
 
 	cli "github.com/tejzpr/zcli/v2"
 )

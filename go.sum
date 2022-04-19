@@ -17,10 +17,8 @@ github.com/russross/blackfriday/v2 v2.1.0 h1:JIOH55/0cWyOuilr9/qlrm0BSXldqnqwMsf
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/tejzpr/zcli/v2 v2.4.1-0.20220419172759-49b528836b11 h1:rQ2Aafk83vHqVSKaN/tRk+5NHmPusD4MGHn/Z6Wrma4=
 github.com/tejzpr/zcli/v2 v2.4.1-0.20220419172759-49b528836b11/go.mod h1:mR3etU9pSGV6snz1SFbZEnkp/QkrSOhA61rE8i7AZJA=
-github.com/tejzpr/zetools-base64 v0.0.0-20220419153815-040e4a0439a8 h1:mNTKbXRvlFGCFN8FysaKS6muyXcuf+MfLVe14i2PD1g=
-github.com/tejzpr/zetools-base64 v0.0.0-20220419153815-040e4a0439a8/go.mod h1:JCBOfUBhpZjyt8i7dHv2Blm689rFhoLdobsAFUJnoZE=
-github.com/urfave/cli/v2 v2.4.0 h1:m2pxjjDFgDxSPtO8WSdbndj17Wu2y8vOT86wE/tjr+I=
-github.com/urfave/cli/v2 v2.4.0/go.mod h1:NX9W0zmTvedE5oDoOMs2RTC8RvdK98NTYZE5LbaEYPg=
+github.com/tejzpr/zetools-base64 v1.0.0 h1:TH/AiKBcWz2xHPY2YWU2Zqa4opgnJ/hZMRpVK7J0Y8U=
+github.com/tejzpr/zetools-base64 v1.0.0/go.mod h1:XcGQDwBM5wUNMd5R5IzpVSUH3cgbY4y76tmI6ynb3m8=
 golang.org/x/net v0.0.0-20210316092652-d523dce5a7f4 h1:b0LrWgu8+q7z4J+0Y3Umo5q1dL7NXBkKBWkaVkAq17E=
 golang.org/x/net v0.0.0-20210316092652-d523dce5a7f4/go.mod h1:RBQZq4jEuRlivfhVLdyRGr576XBO4/greRjx4P4O3yc=
 golang.org/x/sync v0.0.0-20210220032951-036812b2e83c h1:5KslGYwFpkhGh+Q16bwMP3cOontH8FOep7tGV86Y7SQ=

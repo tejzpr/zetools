@@ -72,9 +72,3 @@ zetools ls -bs M -p ../
 zetools tail -f test.log -fw true
 ```
 
----
-## This software wouldn't have been possible without the following projects
-1. [Tail](https://github.com/nxadm/tail)
-2. [Ping](https://github.com/go-ping/ping)
-3. [Tablewriter](https://github.com/olekukonko/tablewriter)
-4. [CLI](https://github.com/tejzpr/zcli/v2)
