@@ -1,21 +1,25 @@
-package commands
+package checkport
 
 import (
 	"fmt"
-	"zetools/utils"
+	"zetools/commands"
 
 	"github.com/urfave/cli/v2"
 )
 
+func init() {
+	commands.RegisterCommand(CheckPortCommandName, &checkPortCommand{}, nil)
+}
+
 // CheckPortCommandName returns the name of the command
-const CheckPortCommandName CommandName = "checkPort"
+const CheckPortCommandName commands.CommandName = "checkPort"
 
 // checkPortCommand is the check port command
 type checkPortCommand struct {
 }
 
 // Name returns the name of the command
-func (b *checkPortCommand) Name() CommandName {
+func (b *checkPortCommand) Name() commands.CommandName {
 	return CheckPortCommandName
 }
 
@@ -43,7 +47,7 @@ func (b *checkPortCommand) Action(c *cli.Context) error {
 	if !(protocol == "udp" || protocol == "tcp") {
 		return fmt.Errorf("protocol must be either udp or tcp")
 	}
-	err := utils.CheckPort(protocol, host, port, timeout)
+	err := CheckPort(protocol, host, port, timeout)
 	if err != nil {
 		return fmt.Errorf("%s://%s:%s is not accessible", protocol, host, port)
 	}

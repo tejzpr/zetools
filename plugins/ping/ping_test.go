@@ -1,109 +1,110 @@
-package commands
+package ping
 
 import (
 	"reflect"
 	"testing"
+	"zetools/commands"
 
 	"github.com/urfave/cli/v2"
 )
 
-func Test_hmacCommand_Name(t *testing.T) {
+func Test_pingCommand_Name(t *testing.T) {
 	tests := []struct {
 		name string
-		b    *hmacCommand
-		want CommandName
+		b    *pingCommand
+		want commands.CommandName
 	}{
 		// TODO: Add test cases.
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			b := &hmacCommand{}
-			if got := b.Name(); got != tt.want {
-				t.Errorf("hmacCommand.Name() = %v, want %v", got, tt.want)
+			b := &pingCommand{}
+			if got := b.Name(); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("pingCommand.Name() = %v, want %v", got, tt.want)
 			}
 		})
 	}
 }
 
-func Test_hmacCommand_Aliases(t *testing.T) {
+func Test_pingCommand_Aliases(t *testing.T) {
 	tests := []struct {
 		name string
-		b    *hmacCommand
+		b    *pingCommand
 		want []string
 	}{
 		// TODO: Add test cases.
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			b := &hmacCommand{}
+			b := &pingCommand{}
 			if got := b.Aliases(); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("hmacCommand.Aliases() = %v, want %v", got, tt.want)
+				t.Errorf("pingCommand.Aliases() = %v, want %v", got, tt.want)
 			}
 		})
 	}
 }
 
-func Test_hmacCommand_Usage(t *testing.T) {
+func Test_pingCommand_Usage(t *testing.T) {
 	tests := []struct {
 		name string
-		b    *hmacCommand
+		b    *pingCommand
 		want string
 	}{
 		// TODO: Add test cases.
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			b := &hmacCommand{}
+			b := &pingCommand{}
 			if got := b.Usage(); got != tt.want {
-				t.Errorf("hmacCommand.Usage() = %v, want %v", got, tt.want)
+				t.Errorf("pingCommand.Usage() = %v, want %v", got, tt.want)
 			}
 		})
 	}
 }
 
-func Test_hmacCommand_Subcommands(t *testing.T) {
+func Test_pingCommand_Subcommands(t *testing.T) {
 	tests := []struct {
 		name string
-		b    *hmacCommand
+		b    *pingCommand
 		want []*cli.Command
 	}{
 		// TODO: Add test cases.
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			b := &hmacCommand{}
+			b := &pingCommand{}
 			if got := b.Subcommands(); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("hmacCommand.Subcommands() = %v, want %v", got, tt.want)
+				t.Errorf("pingCommand.Subcommands() = %v, want %v", got, tt.want)
 			}
 		})
 	}
 }
 
-func Test_hmacCommand_Flags(t *testing.T) {
+func Test_pingCommand_Flags(t *testing.T) {
 	tests := []struct {
 		name string
-		b    *hmacCommand
+		b    *pingCommand
 		want []cli.Flag
 	}{
 		// TODO: Add test cases.
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			b := &hmacCommand{}
+			b := &pingCommand{}
 			if got := b.Flags(); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("hmacCommand.Flags() = %v, want %v", got, tt.want)
+				t.Errorf("pingCommand.Flags() = %v, want %v", got, tt.want)
 			}
 		})
 	}
 }
 
-func Test_hmacCommand_Action(t *testing.T) {
+func Test_pingCommand_Action(t *testing.T) {
 	type args struct {
 		c *cli.Context
 	}
 	tests := []struct {
 		name    string
-		b       *hmacCommand
+		b       *pingCommand
 		args    args
 		wantErr bool
 	}{
@@ -111,9 +112,9 @@ func Test_hmacCommand_Action(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			b := &hmacCommand{}
+			b := &pingCommand{}
 			if err := b.Action(tt.args.c); (err != nil) != tt.wantErr {
-				t.Errorf("hmacCommand.Action() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("pingCommand.Action() error = %v, wantErr %v", err, tt.wantErr)
 			}
 		})
 	}

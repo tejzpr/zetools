@@ -1,21 +1,25 @@
-package commands
+package hmac
 
 import (
 	"fmt"
-	"zetools/utils"
+	"zetools/commands"
 
 	"github.com/urfave/cli/v2"
 )
 
+func init() {
+	commands.RegisterCommand(HMACCommandName, &hmacCommand{}, nil)
+}
+
 // HMACCommandName returns the name of the command
-const HMACCommandName CommandName = "hmac"
+const HMACCommandName commands.CommandName = "hmac"
 
 // hmacCommand is the base64 command
 type hmacCommand struct {
 }
 
 // Name returns the name of the command
-func (b *hmacCommand) Name() CommandName {
+func (b *hmacCommand) Name() commands.CommandName {
 	return HMACCommandName
 }
 
@@ -63,7 +67,7 @@ func (b *hmacCommand) Subcommands() []*cli.Command {
 				text := c.String("text")
 				filename := c.String("filename")
 				key := c.String("key")
-				out, err := utils.HMAC(text, filename, key, "sha256")
+				out, err := HMAC(text, filename, key, "sha256")
 				if err != nil {
 					return err
 				}
@@ -105,7 +109,7 @@ func (b *hmacCommand) Subcommands() []*cli.Command {
 				text := c.String("text")
 				filename := c.String("filename")
 				key := c.String("key")
-				out, err := utils.HMAC(text, filename, key, "sha512")
+				out, err := HMAC(text, filename, key, "sha512")
 				if err != nil {
 					return err
 				}

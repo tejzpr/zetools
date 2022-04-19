@@ -6,6 +6,7 @@ require (
 	github.com/go-ping/ping v0.0.0-20211130115550-779d1e919534
 	github.com/nxadm/tail v1.4.8
 	github.com/olekukonko/tablewriter v0.0.5
+	github.com/tejzpr/zetools-base64 v0.0.0-20220419153815-040e4a0439a8
 	github.com/urfave/cli/v2 v2.4.0
 )
 

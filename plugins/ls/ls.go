@@ -1,24 +1,29 @@
-package commands
+package ls
 
 import (
 	"fmt"
 	"io/ioutil"
 	"os"
 	"time"
+	"zetools/commands"
 
 	"github.com/olekukonko/tablewriter"
 	"github.com/urfave/cli/v2"
 )
 
+func init() {
+	commands.RegisterCommand(LSCommandName, &lsCommand{}, nil)
+}
+
 // LSCommandName returns the name of the command
-const LSCommandName CommandName = "ls"
+const LSCommandName commands.CommandName = "ls"
 
 // lsCommand is the base64 command
 type lsCommand struct {
 }
 
 // Name returns the name of the command
-func (b *lsCommand) Name() CommandName {
+func (b *lsCommand) Name() commands.CommandName {
 	return LSCommandName
 }
 

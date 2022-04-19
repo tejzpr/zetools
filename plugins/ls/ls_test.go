@@ -1,109 +1,110 @@
-package commands
+package ls
 
 import (
 	"reflect"
 	"testing"
+	"zetools/commands"
 
 	"github.com/urfave/cli/v2"
 )
 
-func Test_base64Command_Name(t *testing.T) {
+func Test_lsCommand_Name(t *testing.T) {
 	tests := []struct {
 		name string
-		b    *base64Command
-		want CommandName
+		b    *lsCommand
+		want commands.CommandName
 	}{
 		// TODO: Add test cases.
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			b := &base64Command{}
-			if got := b.Name(); got != tt.want {
-				t.Errorf("base64Command.Name() = %v, want %v", got, tt.want)
+			b := &lsCommand{}
+			if got := b.Name(); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("lsCommand.Name() = %v, want %v", got, tt.want)
 			}
 		})
 	}
 }
 
-func Test_base64Command_Aliases(t *testing.T) {
+func Test_lsCommand_Aliases(t *testing.T) {
 	tests := []struct {
 		name string
-		b    *base64Command
+		b    *lsCommand
 		want []string
 	}{
 		// TODO: Add test cases.
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			b := &base64Command{}
+			b := &lsCommand{}
 			if got := b.Aliases(); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("base64Command.Aliases() = %v, want %v", got, tt.want)
+				t.Errorf("lsCommand.Aliases() = %v, want %v", got, tt.want)
 			}
 		})
 	}
 }
 
-func Test_base64Command_Usage(t *testing.T) {
+func Test_lsCommand_Usage(t *testing.T) {
 	tests := []struct {
 		name string
-		b    *base64Command
+		b    *lsCommand
 		want string
 	}{
 		// TODO: Add test cases.
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			b := &base64Command{}
+			b := &lsCommand{}
 			if got := b.Usage(); got != tt.want {
-				t.Errorf("base64Command.Usage() = %v, want %v", got, tt.want)
+				t.Errorf("lsCommand.Usage() = %v, want %v", got, tt.want)
 			}
 		})
 	}
 }
 
-func Test_base64Command_Subcommands(t *testing.T) {
+func Test_lsCommand_Subcommands(t *testing.T) {
 	tests := []struct {
 		name string
-		b    *base64Command
+		b    *lsCommand
 		want []*cli.Command
 	}{
 		// TODO: Add test cases.
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			b := &base64Command{}
+			b := &lsCommand{}
 			if got := b.Subcommands(); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("base64Command.Subcommands() = %v, want %v", got, tt.want)
+				t.Errorf("lsCommand.Subcommands() = %v, want %v", got, tt.want)
 			}
 		})
 	}
 }
 
-func Test_base64Command_Flags(t *testing.T) {
+func Test_lsCommand_Flags(t *testing.T) {
 	tests := []struct {
 		name string
-		b    *base64Command
+		b    *lsCommand
 		want []cli.Flag
 	}{
 		// TODO: Add test cases.
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			b := &base64Command{}
+			b := &lsCommand{}
 			if got := b.Flags(); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("base64Command.Flags() = %v, want %v", got, tt.want)
+				t.Errorf("lsCommand.Flags() = %v, want %v", got, tt.want)
 			}
 		})
 	}
 }
 
-func Test_base64Command_Action(t *testing.T) {
+func Test_lsCommand_Action(t *testing.T) {
 	type args struct {
 		c *cli.Context
 	}
 	tests := []struct {
 		name    string
-		b       *base64Command
+		b       *lsCommand
 		args    args
 		wantErr bool
 	}{
@@ -111,9 +112,9 @@ func Test_base64Command_Action(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			b := &base64Command{}
+			b := &lsCommand{}
 			if err := b.Action(tt.args.c); (err != nil) != tt.wantErr {
-				t.Errorf("base64Command.Action() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("lsCommand.Action() error = %v, wantErr %v", err, tt.wantErr)
 			}
 		})
 	}

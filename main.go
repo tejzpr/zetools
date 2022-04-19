@@ -5,33 +5,22 @@ import (
 	"os"
 	"zetools/commands"
 
+	_ "zetools/plugins/checkport"
+	_ "zetools/plugins/hmac"
+	_ "zetools/plugins/ls"
+	_ "zetools/plugins/ping"
+	_ "zetools/plugins/tail"
+
+	_ "github.com/tejzpr/zetools-base64"
+
 	"github.com/urfave/cli/v2"
 )
 
-const appVersion = "v0.0.2"
-
 func main() {
 	app := &cli.App{
-		Usage: "Commandline tools for ze common tasks",
-		Commands: []*cli.Command{
-			{
-				Name:    "version",
-				Aliases: []string{"v"},
-				Usage:   "Print the version of zetools",
-				Action: func(c *cli.Context) error {
-					fmt.Println(appVersion)
-					return nil
-				},
-			},
-			commands.GetCommand(commands.Base64CommandName, nil),
-			commands.GetCommand(commands.HMACCommandName, nil),
-			commands.GetCommand(commands.CheckPortCommandName, nil),
-			commands.GetCommand(commands.PingCommandName, nil),
-			commands.GetCommand(commands.LSCommandName, nil),
-			commands.GetCommand(commands.TailCommandName, nil),
-		},
+		Usage:    "Unified commandline tools for common tasks",
+		Commands: commands.GetCommands(),
 	}
-
 	err := app.Run(os.Args)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, err.Error()+"\n")

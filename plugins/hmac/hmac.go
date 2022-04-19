@@ -1,4 +1,4 @@
-package utils
+package hmac
 
 import (
 	"crypto/hmac"

@@ -1,24 +1,29 @@
-package commands
+package ping
 
 import (
 	"fmt"
 	"os"
 	"os/signal"
 	"time"
+	"zetools/commands"
 
 	"github.com/go-ping/ping"
 	"github.com/urfave/cli/v2"
 )
 
+func init() {
+	commands.RegisterCommand(PingCommandName, &pingCommand{}, nil)
+}
+
 // PingCommandName returns the name of the command
-const PingCommandName CommandName = "ping"
+const PingCommandName commands.CommandName = "ping"
 
 // pingCommand is the ping command
 type pingCommand struct {
 }
 
 // Name returns the name of the command
-func (b *pingCommand) Name() CommandName {
+func (b *pingCommand) Name() commands.CommandName {
 	return PingCommandName
 }
 

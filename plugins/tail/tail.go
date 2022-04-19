@@ -1,23 +1,28 @@
-package commands
+package tail
 
 import (
 	"fmt"
 	"os"
 	"os/signal"
+	"zetools/commands"
 
 	"github.com/nxadm/tail"
 	"github.com/urfave/cli/v2"
 )
 
+func init() {
+	commands.RegisterCommand(TailCommandName, &tailCommand{}, nil)
+}
+
 // TailCommandName returns the name of the command
-const TailCommandName CommandName = "tail"
+const TailCommandName commands.CommandName = "tail"
 
 // tailCommand is the base64 command
 type tailCommand struct {
 }
 
 // Name returns the name of the command
-func (b *tailCommand) Name() CommandName {
+func (b *tailCommand) Name() commands.CommandName {
 	return TailCommandName
 }
 

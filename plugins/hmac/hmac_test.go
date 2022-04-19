@@ -1,4 +1,4 @@
-package utils
+package hmac
 
 import "testing"
 
@@ -27,12 +27,12 @@ func TestHMAC(t *testing.T) {
 		},
 		{
 			name: "HMAC256-File",
-			args: args{text: "", fileName: "../testdata/hmac/test.txt", key: "abc", hashType: "sha256"},
+			args: args{text: "", fileName: "./testdata/hmac/test.txt", key: "abc", hashType: "sha256"},
 			want: "99f8aedf2162d644dd683c9b4ecb04d1d4efc2be1fd634eee7856f369b2b90be",
 		},
 		{
 			name: "HMAC512-File",
-			args: args{text: "", fileName: "../testdata/hmac/test.txt", key: "abc", hashType: "sha512"},
+			args: args{text: "", fileName: "./testdata/hmac/test.txt", key: "abc", hashType: "sha512"},
 			want: "dbe37866e0a483bc53f34497056ebbd1ab43e19fa5eb551399ce6c1289c8627842f8c2aed44352c95935533a27a485ff0b3f532c0f6c914d704f087ea1a18b30",
 		},
 	}

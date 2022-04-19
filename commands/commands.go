@@ -1,6 +1,11 @@
 package commands
 
-import "github.com/urfave/cli/v2"
+import (
+	"fmt"
+	"sync"
+
+	"github.com/urfave/cli/v2"
+)
 
 // CommandName is the name of the command
 type CommandName string
@@ -21,33 +26,39 @@ type CommandOpts struct {
 	SkipFlagParsing bool
 }
 
-// GetCommand returns the command with the given name
-func GetCommand(name CommandName, opts *CommandOpts) *cli.Command {
-	switch name {
-	case Base64CommandName:
-		return getCommandInstance(&base64Command{}, opts)
-	case HMACCommandName:
-		return getCommandInstance(&hmacCommand{}, opts)
-	case CheckPortCommandName:
-		return getCommandInstance(&checkPortCommand{}, opts)
-	case PingCommandName:
-		return getCommandInstance(&pingCommand{}, opts)
-	case LSCommandName:
-		return getCommandInstance(&lsCommand{}, opts)
-	case TailCommandName:
-		return getCommandInstance(&tailCommand{}, opts)
+var (
+	commandMu sync.RWMutex
+	commands  = make(map[CommandName]*cli.Command)
+)
+
+// RegisterCommand registers a command
+func RegisterCommand(name CommandName, command Command, opts *CommandOpts) error {
+	commandMu.Lock()
+	defer commandMu.Unlock()
+	if command == nil {
+		return fmt.Errorf("command is nil")
+	}
+	if _, dup := commands[name]; dup {
+		return fmt.Errorf("command already registered: %s", name)
+	}
+	commands[name] = &cli.Command{
+		Name:            string(command.Name()),
+		Aliases:         command.Aliases(),
+		Usage:           command.Usage(),
+		Subcommands:     command.Subcommands(),
+		Flags:           command.Flags(),
+		Action:          command.Action,
+		SkipFlagParsing: opts != nil && opts.SkipFlagParsing,
 	}
 	return nil
 }
 
-func getCommandInstance(cmd Command, opts *CommandOpts) *cli.Command {
-	return &cli.Command{
-		Name:            string(cmd.Name()),
-		Aliases:         cmd.Aliases(),
-		Usage:           cmd.Usage(),
-		Subcommands:     cmd.Subcommands(),
-		Flags:           cmd.Flags(),
-		Action:          cmd.Action,
-		SkipFlagParsing: opts != nil && opts.SkipFlagParsing,
+// GetCommands returns the registered commands
+func GetCommands() []*cli.Command {
+	commands["version"] = getVersion()
+	cmds := make([]*cli.Command, 0)
+	for _, command := range commands {
+		cmds = append(cmds, command)
 	}
+	return cmds
 }
