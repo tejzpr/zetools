@@ -15,7 +15,23 @@ Download a release, extract the archive and run
 ```sh
 zetools -h
 ```
+# Contributing
+To contribute a command plugin create a new plugin Git repo and implement the 
+> ***commands/Command interface*** 
 
+and call 
+
+> ***commands.RegisterCommand*** 
+
+function in init() function
+
+Example:
+```go
+func init() {
+	commands.RegisterCommand(TailCommandName, &tailCommand{}, nil)
+}
+```
+Checkout the [Hello](https://github.com/tejzpr/zetools-hello) plugin for reference.
 # Available Commands
 ## **base64**
 ### Usage 
