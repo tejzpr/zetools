@@ -21,7 +21,9 @@ Follow the below steps to contribute a command plugin
 > ***commands/Command interface*** 
 2. call 
 > ***commands.RegisterCommand*** 
+
 function in *init()* function
+
 Example:
 ```go
 func init() {
