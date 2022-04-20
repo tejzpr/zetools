@@ -88,4 +88,10 @@ zetools ls -bs M -p ../
 ```sh
 zetools tail -f test.log -fw true
 ```
-
+---
+## **cat**
+### Usage
+#### Cat a file
+```sh
+zetools cat file.txt
+```
