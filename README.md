@@ -5,7 +5,7 @@
 [![CodeQL](https://github.com/tejzpr/zetools/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/tejzpr/zetools/actions/workflows/codeql-analysis.yml)
 
 # ZETools
-Unified Extensible Command line tools for common tasks
+Unified Extensible Command line tools for common tasks - A plugin based CLI toolset that allows adding functionality you need. Create single standalone binaries that include common features that can run on multiple platforms.
 
 # Using Docker
 ```docker
