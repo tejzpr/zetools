@@ -6,7 +6,7 @@ import (
 	cli "github.com/tejzpr/zcli/v2"
 )
 
-const appVersion = "v1.0.1"
+const appVersion = "v1.0.2"
 
 func getVersion() *cli.Command {
 	return &cli.Command{
