@@ -8,7 +8,7 @@ require (
 	github.com/tejzpr/zetools-cat v1.0.0
 	github.com/tejzpr/zetools-checkport v1.0.0
 	github.com/tejzpr/zetools-hmac v1.0.0
-	github.com/tejzpr/zetools-ls v1.0.0
+	github.com/tejzpr/zetools-ls v1.0.1
 	github.com/tejzpr/zetools-ping v1.0.0
 	github.com/tejzpr/zetools-tail v1.0.0
 )
