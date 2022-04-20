@@ -19,6 +19,8 @@ github.com/tejzpr/zcli/v2 v2.4.1-0.20220419172759-49b528836b11 h1:rQ2Aafk83vHqVS
 github.com/tejzpr/zcli/v2 v2.4.1-0.20220419172759-49b528836b11/go.mod h1:mR3etU9pSGV6snz1SFbZEnkp/QkrSOhA61rE8i7AZJA=
 github.com/tejzpr/zetools-base64 v1.0.0 h1:TH/AiKBcWz2xHPY2YWU2Zqa4opgnJ/hZMRpVK7J0Y8U=
 github.com/tejzpr/zetools-base64 v1.0.0/go.mod h1:XcGQDwBM5wUNMd5R5IzpVSUH3cgbY4y76tmI6ynb3m8=
+github.com/tejzpr/zetools-cat v1.0.0 h1:dH/bLy+9aTJk7zsPyvY1ByR/07Kji/XaosGsdeTtD1c=
+github.com/tejzpr/zetools-cat v1.0.0/go.mod h1:rQoQIyXlJA9a4uPn97wS22n66yrkPhQGJcIXiiTqX4w=
 github.com/tejzpr/zetools-checkport v1.0.0 h1:1oSjgRApEtVCdqx7gGgwn/gVt+uznbRe6s+PEKC7LqA=
 github.com/tejzpr/zetools-checkport v1.0.0/go.mod h1:nPqxbZvDjdiYWozStEtBEO9+JjuKynWTdE+QlH1OPEU=
 github.com/tejzpr/zetools-hmac v1.0.0 h1:Tb2mdn9xg+mh70PgZbZQwa2kfOoglCxV6PLQrewEYCc=

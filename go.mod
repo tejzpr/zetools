@@ -5,6 +5,7 @@ go 1.18
 require (
 	github.com/tejzpr/zcli/v2 v2.4.1-0.20220419172759-49b528836b11
 	github.com/tejzpr/zetools-base64 v1.0.0
+	github.com/tejzpr/zetools-cat v1.0.0
 	github.com/tejzpr/zetools-checkport v1.0.0
 	github.com/tejzpr/zetools-hmac v1.0.0
 	github.com/tejzpr/zetools-ls v1.0.0

@@ -8,6 +8,7 @@ import (
 
 	// Available command plugins
 	_ "github.com/tejzpr/zetools-base64"
+	_ "github.com/tejzpr/zetools-cat"
 	_ "github.com/tejzpr/zetools-checkport"
 	_ "github.com/tejzpr/zetools-hmac"
 	_ "github.com/tejzpr/zetools-ls"
